@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://db:5432/pingbot
+    username: postgres
+    password: example
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+telegram:
+  bot:
+    token: ${BOT_TOKEN}
+    username: PingBot
+    webapp:
+      url: https://fb86-195-34-206-186.ngrok-free.app/webapp
